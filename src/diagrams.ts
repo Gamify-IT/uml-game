@@ -86,9 +86,9 @@ Lecture *-- Professor`,
     class Reptile
     Reptile : +reproduce(Reptile) Egg[]
     class Mammal
-    Mammal : +reprodice(Mammal) Baby[]
+    Mammal : +reproduce(Mammal) Baby[]
     Reptile <|-- Snake
-    Reptile <|-- Lizzard
+    Reptile <|-- Lizard
     Mammal <|-- Cat
     Mammal <|-- Racoon
     Animal <|.. Reptile
@@ -103,9 +103,9 @@ Lecture *-- Professor`,
     class Reptile
     Reptile : +reproduce(Reptile) Egg[]
     class Mammal
-    Mammal : +reprodice(Mammal) Baby[]
+    Mammal : +reproduce(Mammal) Baby[]
     Reptile <-- Snake
-    Reptile <-- Lizzard
+    Reptile <-- Lizard
     Mammal <-- Cat
     Mammal <-- Racoon
     Animal <|-- Reptile
@@ -120,9 +120,9 @@ Lecture *-- Professor`,
     class Reptile
     Reptile : +reproduce(Reptile) Egg[]
     class Mammal
-    Mammal : +reprodice(Mammal) Baby[]
+    Mammal : +reproduce(Mammal) Baby[]
     Reptile <|-- Snake
-    Reptile <|-- Lizzard
+    Reptile <|-- Lizard
     Mammal <|-- Cat
     Mammal <|-- Racoon
     Animal <.. Reptile
