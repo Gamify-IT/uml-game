@@ -2,17 +2,16 @@
   <div>
     <textarea
       v-model="text"
+      @input="textareaChanged()"
       style="
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 500px;
         background-color: azure;
         white-space: pre-wrap;
       "
     >
     </textarea>
-    <div class="mermaid">
-      {{ text }}
-    </div>
+    <div id="diagramm" class="mermaid" v-html="diagrammHTML"></div>
   </div>
 </template>
 
@@ -24,7 +23,8 @@ export default defineComponent({
   components: {},
   data() {
     return {
-      text: String,
+      diagrammHTML: "",
+      text: "",
     };
   },
   mounted() {
@@ -33,6 +33,12 @@ export default defineComponent({
   methods: {
     click() {
       console.log("");
+    },
+    textareaChanged() {
+      console.log(this.text);
+      (window as any).mermaid.render("diagrammmm", this.text, (res: string) => {
+        this.diagrammHTML = res;
+      });
     },
   },
 });
