@@ -39,8 +39,8 @@
         @click="onNextPressed()"
         v-if="status !== ''"
       >
-        <i class="bi bi-caret-right"></i>
         Next
+        <i class="bi bi-fast-forward-fill"></i>
       </button>
     </div>
   </div>
