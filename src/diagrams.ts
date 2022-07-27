@@ -20,7 +20,7 @@ Professor : -String email
 class Lecture
 Lecture : -String name
 
-Gender <.. Person
+Gender .. Person
 Person <-- Professor
 Person <-- Student
 Lecture *--* Student
@@ -45,7 +45,7 @@ Professor : -String email
 class Lecture
 Lecture : -String name
 
-Gender <.. Person
+Gender -- Person
 Person <|-- Professor
 Person <|-- Student
 Lecture *--* Student
@@ -70,7 +70,7 @@ Professor : -String email
 class Lecture
 Lecture : -String name
 
-Gender <-- Person
+Gender -- Person
 Person <|-- Professor
 Person <|-- Student
 Lecture *--* Student
